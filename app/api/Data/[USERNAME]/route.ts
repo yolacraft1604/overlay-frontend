@@ -5,7 +5,7 @@ export async function GET(req: Request) {
 
     const pathParts = url.pathname.split('/');
     const username = pathParts[pathParts.length - 1];
-    const requrl = "http://localhost:5500/api/getMatch/" + username;
+    const requrl = "https://mcsr-streamoverlay.vercel.app/api/getMatch/" + username;
     console.log(requrl);
 
     try {
